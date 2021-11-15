@@ -28,7 +28,7 @@ prompt APPLICATION 61355 - MUSIC WITH ALBUM ART
 -- Application Export:
 --   Application:     61355
 --   Name:            MUSIC WITH ALBUM ART
---   Date and Time:   13:29 Monday November 15, 2021
+--   Date and Time:   13:36 Monday November 15, 2021
 --   Exported By:     JSQCONTRACTTOHIRE@YAHOO.COM
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -120,7 +120,7 @@ wwv_flow_api.create_flow(
 ,p_substitution_string_01=>'APP_NAME'
 ,p_substitution_value_01=>'MUSIC WITH ALBUM ART'
 ,p_last_updated_by=>'JSQCONTRACTTOHIRE@YAHOO.COM'
-,p_last_upd_yyyymmddhh24miss=>'20211013190003'
+,p_last_upd_yyyymmddhh24miss=>'20211115133535'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>5
 ,p_ui_type_name => null
@@ -175,6 +175,12 @@ wwv_flow_api.create_list_item(
 ,p_list_item_link_target=>'f?p=&APP_ID.:10000:&APP_SESSION.::&DEBUG.:'
 ,p_list_item_icon=>'fa-user-wrench'
 ,p_security_scheme=>wwv_flow_api.id(24726981494413892157)
+,p_list_item_current_type=>'TARGET_PAGE'
+);
+wwv_flow_api.create_list_item(
+ p_id=>wwv_flow_api.id(12356043122356798043)
+,p_list_item_display_sequence=>10010
+,p_list_item_link_text=>'Under-Construction'
 ,p_list_item_current_type=>'TARGET_PAGE'
 );
 end;
